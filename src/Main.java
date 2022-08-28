@@ -27,6 +27,35 @@ public class Main {
 //3
         String[] seasons = {"Winter", "Spring", "Summer", "Autumn"};
 
+        /*
+        ## 2 задача
+Пройдите по каждому из трех массивов и распечатайте все элементы
+всех трех массивов, начиная с первого элемента, через запятую.
+Запятая между последним элементом одного массива и первым элементом следующего не нужна.
+         */
+        System.out.println("2 задача");
+        for (int i=0; i<massiv123.length; i++){
+            System.out.print(massiv123[i]);
+            if (i<massiv123.length-1) System.out.print(", ");
+        }
+        System.out.println("");
+        for (int y=0; y<massivDrobn.length; y++){
+            System.out.print(massivDrobn[y]);
+            if (y<massivDrobn.length-1) System.out.print(", ");
+        }
+        System.out.println("");
+        for (int t=0; t<seasons.length; t++){
+            System.out.print(seasons[t]);
+            if (t<seasons.length-1) System.out.print(", ");
+        }
+
+
+
+
+
+
+
+
 
     }
 }
