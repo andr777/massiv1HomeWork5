@@ -48,9 +48,41 @@ public class Main {
             System.out.print(seasons[t]);
             if (t<seasons.length-1) System.out.print(", ");
         }
+        System.out.println(" ");
+/*
+## 3 задача
+Теперь ваша задача – распечатать все элементы всех трех массивов, но начинать нужно не с первого элемента массива, а с последнего. Элементы должны быть распечатаны через запятую, при этом элементы одного массива располагаются на одной строчке, а элементы другого массива – на другой.
+Запятая между последним элементом одного массива и первым элементом следующего не нужна.
+ */
+        System.out.println("3 задача");
+        for (int i=massiv123.length-1; i>=0; i--){
+            System.out.print(massiv123[i]);
+            if (i>0) System.out.print(", ");
+        }
+        System.out.println("");
+        for (int y=massivDrobn.length-1; y>=0; y--){
+            System.out.print(massivDrobn[y]);
+            if (y>0) System.out.print(", ");
+        }
+        System.out.println("");
+        for (int t=seasons.length-1; t>=0; t--){
+            System.out.print(seasons[t]);
+            if (t>0) System.out.print(", ");
+        }
+        System.out.println(" ");
+/*
+### 4 задача
+Пройдитесь по первому целочисленному массиву и все нечетные числа в нем сделайте четными (нужно прибавить 1).
+Важно: код должен работать с любым целочисленным массивом, поэтому для решения задания вам нужно использовать циклы.
+Распечатайте результат преобразования в консоль.
+ */
+        System.out.println("4 задача");
+        for (int i=0; i<massiv123.length; i++){
+            if (massiv123[i]%2!=0) {massiv123[i]=massiv123[i]+1;}
 
-
-
+            System.out.print(massiv123[i]);
+            if (i<massiv123.length-1) System.out.print(", ");
+        }
 
 
 
